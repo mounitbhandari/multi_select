@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+
+  <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+  <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.7.0/lodash.min.js"></script>
+  <script src="angularjs-dropdown-multiselect.min.js"></script>
+
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-controller="MainCtrl">
+  <p>Hello {{name}}!</p>
+  
+  
+  <div ng-dropdown-multiselect="" options="example14data" selected-model="example14model" checkboxes="true" extra-settings="setting1"></div>
+
+  <div ng-dropdown-multiselect="" options="example14data" selected-model="example14model" extra-settings="setting2"></div>
+
+  <pre>Selected Model: {{example14model}} | json</pre>
+
+</body>
+
+</html>
